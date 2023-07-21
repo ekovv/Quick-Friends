@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{/static/chat.css}"/>
 </head>
 <body>
 
@@ -24,6 +25,20 @@
 
 
 </div>
+
+<div class='chat'>
+    <div class='chat-messages'>
+        <div class='chat-messages__content' id='messages'>
+            Загрузка...
+        </div>
+    </div>
+    <div class='chat-input'>
+        <form method='post' id='chat-form'>
+            <input type='text' id='message-text' class='chat-form__input' placeholder='Введите сообщение'> <input type='submit' class='chat-form__submit' value='=>'>
+        </form>
+    </div>
+</div>
+
 
 </body>
 </html>
